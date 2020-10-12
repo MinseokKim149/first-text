@@ -1,0 +1,27 @@
+.settings__setting {
+  padding: 20px 0px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings__setting i {
+  margin-right: 20px;
+  opacity: 0.5;
+}
+.settings-setting-column:last-child {
+  opacity: 0.6;
+}
+@keyframes settingfont {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+.settings-setting-column:hover {
+  will-change: transform;
+  animation: settingfont 0.3 ease-in-out forwards;
+}
