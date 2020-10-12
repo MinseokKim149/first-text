@@ -1,0 +1,110 @@
+.recommended-friends {
+  padding: 25px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+.recommended-friends__title {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.recommended-friends span {
+  margin: 100px 0px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 25px 0px;
+}
+.Open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Open-post__title {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.Open-post__hashtags {
+  opacity: 0.6px;
+}
+.Open-post__members {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+}
+.Open-post__members img {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.Open-post__members-counts {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.Open-post__members .divider {
+  width: 2px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.Open-post__members-status {
+  color: #ffb0e0;
+}
+.Open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.Open-post__photo {
+  position: relative;
+}
+.Open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.Open-post__heart-count span {
+  margin-left: 3px;
+}
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.Open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
+@keyframes codeimage {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(3);
+  }
+}
+.icon-row__icon:hover {
+  will-change: transform;
+  animation: codeimage 0.3 ease-in-out forwards;
+}
